@@ -14,14 +14,14 @@ async def cmd_start(message: types.Message):
     kb = types.ReplyKeyboardMarkup(
         keyboard=[[
             types.KeyboardButton(
-                text="🌸 Открыть каталог flbar",
+                text="🌸 Открыть каталог букетов",
                 web_app=types.WebAppInfo(url=WEBAPP_URL)
             )
         ]],
         resize_keyboard=True
     )
     await message.answer(
-        "Нажмите кнопку, чтобы открыть каталог flbar",
+        "Нажмите кнопку, чтобы открыть каталог букетов",
         reply_markup=kb
     )
 
