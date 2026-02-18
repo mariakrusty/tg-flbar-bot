@@ -1,8 +1,9 @@
 import asyncio
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-API_TOKEN = "8567149212:AAHVFnR1Qv9es-ztSmj2Z7yCzHuTLslJ7iU"
+API_TOKEN = os.getenv("BOT_TOKEN")
 WEBAPP_URL = "https://flbar.ru"
 
 bot = Bot(token=API_TOKEN)
